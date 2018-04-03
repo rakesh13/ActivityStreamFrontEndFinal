@@ -1,0 +1,54 @@
+
+  .column {
+    
+    padding: 5px;
+    height: 685px;
+  }
+  
+  .users ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    cursor: hand;
+  }
+  
+  .users li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #073857;
+    color: #c6c3e9;
+  }
+  
+  .users li:hover {
+    background-color: #aeb3b4;
+    
+  }
+  
+  .messages  {
+    position: relative;
+    top: -3px;
+    left: 126px;
+    height: fit-content;
+    width:  auto;
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+ /*  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+
+  .addcircle{
+    color: rgb(38, 41, 38);
+    font-size: 25px;
+    align-content: right;
+    padding-bottom: 10px;
+    
+  }
+
+ 

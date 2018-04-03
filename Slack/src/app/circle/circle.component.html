@@ -1,0 +1,21 @@
+
+
+
+
+
+					
+	<div class="circles">
+		<ul><li style="background: #4B2D05;">
+				<h1>Circles				<button mat-mini-fab color="primary" style="float: right;" mat-raised-button (click)="showCreateCircleDialog()">+</button>	
+				</h1>
+			</li></ul>	
+	  <ul *ngFor="let circle of circles" [class.selected]="circle === selectedCircle" (click)="getMessagesByCircleName(circle.circleName)">
+		  <li><span style="font-size: 22px;">{{circle.circleName}}</span>
+				<!-- <span class="glyphicon glyphicon-edit" (click)="addUserToCircle($event)"></span>  -->
+				<button mat-raised-button color="accent" style="float: right;"  (click)="addUserToCircle($event)">Add Users</button>
+			</li>
+	  </ul>
+	</div>
+	
+
+

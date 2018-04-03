@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{title}}!
+  </h1>
+
+ 
+
+    <div class="user left">
+
+      <!-- <div *ngFor="let user of users">
+       <h2>#{{user.name}}</h2>
+    </div> -->
+      <app-user [users]="users" (commonMessage)="getAllMessageByUsers($event)"></app-user>
+    </div>
+    <div class="message middle">
+      <app-message [commonMessage]="commonMessage"></app-message>
+
+    </div>
+    <div class="circle right">
+      <app-circle [circles]="circles" (commonMessage)="getMessagesByCircleName($event)"></app-circle>
+    </div>
+  
+</div>

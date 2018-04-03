@@ -1,0 +1,53 @@
+<body>
+  <div style="padding-top: 0px;float: right;">
+  <span class="glyphicon glyphicon-remove" (click)="cancel()" ></span>
+    </div>
+<div class="header">
+  
+  <h1 style="text-align: center;">{{circleName}}</h1> 
+ </div>
+ 
+ <div>
+   
+    <div class="column menu" class="left">
+      <h4>All Users</h4>
+  <mat-button-toggle  *ngFor="let user of users" [class.selected]="user === selectedUser" (click)="selectUsers(user.emailId)">
+    <li>{{user.name}} </li>    
+  </mat-button-toggle>
+</div>
+<!-- <section class="demo-section">
+  <mat-button-toggle-group name="circles">
+    <mat-button-toggle *ngFor="let circle of circles" [value]="pie">
+      {{circle.circleName}}
+    </mat-button-toggle>
+	</mat-button-toggle-group>
+	</section> -->
+   
+    <div class="right">
+        <h4>Circle Users</h4>
+      <ul>
+          
+        <li *ngFor="let existing of usersOfCircle" [class.clicked]="emailId === selectedEmailId" (click)="removeUsers(existing)">
+          {{existing}}
+        </li>
+      </ul>
+      <h4 *ngIf="selected">New Users</h4>
+      <ul  *ngFor="let user of selected">
+        <li>{{user}}</li>
+      </ul>
+   </div>
+   
+ 
+  <div class="operator">
+   <span class="glyphicon glyphicon-forward" (click)="addToCircle($event)"></span><br><br>
+   <span class="glyphicon glyphicon-backward" (click)="removeFromCircle($event)"></span>
+   </div>
+  
+ </div>
+ <br>
+ <div class="footer">
+  <button mat-raised-button color="warn" (click)="deleteUserfromCircle($event)" style="float:left;">Remove</button>
+  <button mat-raised-button color="primary" (click)="addUserToCircle($event)" style="float:right;">Add</button>
+ </div>
+</body>
+ 

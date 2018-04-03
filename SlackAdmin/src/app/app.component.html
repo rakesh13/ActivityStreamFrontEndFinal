@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta charec set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Page Title -->
+        <title>Activity Stream Admin</title>		
+	
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Google Font -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+		<!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+		<!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+		<!-- jquery.fancybox  -->
+        <link rel="stylesheet" href="../../assets/css/jquery.fancybox.css">
+		<!-- animate -->
+        <link rel="stylesheet" href="../../assets/css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="../../assets/css/main.css">
+		<!-- media-queries -->
+        <link rel="stylesheet" href="../../assets/css/media-queries.css">
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="../../assets/js/modernizr-2.6.2.min.js"></script>
+
+    </head>
+	
+    <body id="body">
+<header id="navigation" class="navbar-fixed-top navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- responsive nav button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+            <!-- /responsive nav button -->
+            
+            <!-- logo -->
+            <a class="navbar-brand" href="#">
+                <h1 id="logo">
+      <!-- <img src="../../assets/img/logo.png" alt="Brandi"> -->
+      Activity Stream Admin
+                </h1>
+            </a>
+            <!-- /logo -->
+        </div>
+
+        <!-- main nav -->
+        <nav class="collapse navbar-collapse navbar-right" role="navigation">
+            <ul id="nav" class="nav navbar-nav">
+                <li class="current"><a href="#">Admin Home</a></li>
+                <li><a href="/create">Create Workspace</a></li>
+                <li><a href="#works">Login</a></li>
+                <li><a href="#team">Add Users</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- /main nav -->
+        
+    </div>
+</header>
+
+
+<!--<app-workspaceusers></app-workspaceusers> -->
+<router-outlet></router-outlet>
+
+</body>
+</html>

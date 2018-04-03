@@ -1,0 +1,94 @@
+
+/*  label {
+    display: inline-block;
+    width: 3em;
+    margin: .5em 0;
+    color: #607D8B;
+    font-weight: bold;
+  }
+  input {
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+  }
+  button {
+    margin-top: 20px;
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer; cursor: hand;
+  }
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color:#ccc; 
+    cursor: auto;
+  }
+   */
+ 
+    .messages {
+      list-style-type: none;
+      padding: 0;
+      width: auto;
+      height: 643px;
+      overflow: scroll;   
+     }
+   
+     ul {
+     
+      vertical-align: bottom;
+      position:absolute;
+      bottom:100px;
+      margin:0px;
+     }
+  
+    
+   
+    
+    .messagetext{
+      box-sizing: border-box;
+      color: black;
+      font-size: 18px;
+      margin-top: 5px;
+      /* float: left; */
+    }
+  
+    .typedmessage{
+      font-size: 16px;
+      height: 38px;
+      width: 95%;     
+    }
+  
+    .sentdate{
+      color: black;
+      font-size: 15px;
+       float:right;
+      
+    }
+  
+    .senderEmail{
+      color: rgb(5, 18, 75);
+      font-size: 18px;
+      float: left;
+      margin-right: 5px;
+    }
+    
+    .plus
+    {
+      font-size: 20px;
+      margin: 0;
+      height: 40px;
+      width: 5%;
+      background-color : white ;
+      float: left;
+    }
+
+    .plus :hover{
+      
+       background-color:  rgb(114, 5, 5);
+       
+    }

@@ -1,0 +1,14 @@
+
+
+<div class="column">
+    
+      <div class="users">
+          <ul> <li style="background: #4B2D05;"><h1>Users</h1> </li></ul>
+        <ul>
+          <li *ngFor="let user of users" [class.selected]="user === selectedUser" (click)="getAllMessageByUsers(user.emailId)">
+           <span style="font-size: 22px;"> {{user.name}}</span>
+         
+          </li>
+        </ul>
+      </div>
+    </div>

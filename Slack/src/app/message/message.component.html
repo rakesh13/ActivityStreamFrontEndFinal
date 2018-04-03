@@ -1,0 +1,25 @@
+
+<div class="messages">
+  <ul>
+      <div *ngFor="let message of commonMessage?.messages">
+        <div class="senderEmail"> {{message.senderEmailId}} </div>
+        <div style="float:right;"> {{message.sentDate| date: 'dd-MM-yyyy hh:mm:ss'}} </div>
+        <div class="messagetext"> {{message.messageText}} </div>
+      </div>
+  
+    </ul>
+    <div *ngIf="counter!==0">
+      <div class="sender" class="chat" class="sendMessage" >
+          <span class="glyphicon glyphicon-user"></span>&nbsp;
+          <b>{{messageStomp.senderEmailId}}</b> at {{messageStomp.sentDate| date: 'yyyy-MM-dd hh:mm:ss'}}</div>
+      <div class="message">
+          <span class="glyphicon glyphicon-envelope"></span> &nbsp;{{messageStomp.messageText}}
+      </div>
+    </div>
+  
+</div>
+
+<div class="newmessage">
+<button class="plus">+</button>
+<textarea class="typedmessage" [(ngModel)]="typedMessage" (keydown)="sendMessage($event)"></textarea>
+</div>

@@ -1,0 +1,11 @@
+<div>
+    <div>
+      <mat-form-field>
+        <input matInput [(ngModel)]="circlename" placeholder="New Circle Name">
+      </mat-form-field>
+    </div>
+    <div>
+      <button mat-raised-button color="primary" (click)="createCircle($event)">Create Circle</button>
+      <button mat-raised-button color="primary" (click)="onCloseCancel()">Cancel</button>
+    </div>
+  </div>

@@ -1,0 +1,18 @@
+
+<div class="messages" >
+  <ul>
+      <div *ngFor="let message of commonMessage?.messages">
+        <div class="senderEmail"> {{message.senderEmailId}} </div>
+        <div style="float:right;"> {{message.sentDate| date: 'dd-MM-yyyy hh:mm:ss'}} </div>
+        <div class="messagetext"> {{message.messageText}} </div>
+      </div>
+  
+    </ul>
+  
+  
+</div>
+  
+<div class="newmessage">
+<button class="plus">+</button>
+<textarea class="typedmessage" [(ngModel)]="typedMessage" (keydown)="sendMessage($event)"></textarea>
+</div>
